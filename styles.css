@@ -1,0 +1,330 @@
+/* Basic CSS Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.container-box{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Padding for container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container {
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+    
+}
+
+header .logo h1 {
+    display: inline;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+
+
+nav {
+    float: right;
+}
+
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: orangered;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#home {
+    background-color: #42b983;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    
+    
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+#home .btn-primary {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+
+#about, #skills, #projects {
+    background: #fff;
+    padding: 5rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+.skills-grid .skill {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.skills-grid .skill i {
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+.skill:hover{
+    background-color: aqua;
+    transform: translateY(-10px); /* Move the image up */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.projects-grid .project {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease;
+
+}
+
+.project:hover{
+    background-color: aquamarine;
+    transform: translateY(-10px); /* Move the image up */
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+/* Certifications Section */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+   
+    
+}
+.certification {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.certification img {
+    max-width: 150px;
+    margin-right: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.certification-info {
+    flex: 1;
+}
+
+.certification-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.certification-info p {
+    margin: 0;
+}
+.certification-image {
+    max-width: 150px;
+    margin-right: 1rem;
+    border-radius: 8px;
+    cursor: pointer; /* Ensure it looks clickable */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.certification-image:hover {
+    transform: translateY(-10px); /* Move the image up */
+}
+
+/* Overlay Effect */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: none; /* Remove the black background */
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+/* Show overlay on hover */
+
+.close-button {
+    position: absolute;
+    top: 35px;
+    right: 310px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background:rgb(241, 63, 63);
+    color: #fff;
+}
+
+/* Contact Section Styling */
+#contact {
+    
+    padding: 5rem 1rem; /* Padding for the section */
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item i {
+    font-size: 2rem; /* Icon size */
+    color: #007bff; /* Icon color */
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-item a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-item i {
+        margin-bottom: 0.5rem;
+    }
+}
